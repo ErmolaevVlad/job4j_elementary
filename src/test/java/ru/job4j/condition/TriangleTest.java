@@ -24,5 +24,4 @@ class TriangleTest {
         boolean result = Triangle.exist(ab, ac, bc);
         assertFalse(result);
     }
-
 }

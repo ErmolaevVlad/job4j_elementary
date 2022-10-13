@@ -43,4 +43,13 @@ public class PointTest {
         double out = a.distance(b);
         assertThat(out).isEqualTo(expected, within(0.01));
     }
+
+    @Test
+    public void when111To982Then10dot67() {
+        Point a = new Point(1, 1, 1);
+        Point b = new Point(9, 8, 2);
+        double expected = 10.67;
+        double out = a.distance3d(b);
+        assertThat(out).isEqualTo(expected, within(0.01));
+    }
 }
